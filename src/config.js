@@ -152,18 +152,6 @@ module.exports = function() {
             return webpackMerge.smart(
                 {
                     cacheDirectory: true,
-                    presets: [
-                        [
-                            '@babel/preset-env',
-                            {
-                                modules: false,
-                                targets: {
-                                    browsers: ['> 2%']
-                                },
-                                forceAllTransforms: true
-                            }
-                        ]
-                    ],
                     plugins: [
                         '@babel/plugin-proposal-object-rest-spread',
                         [
